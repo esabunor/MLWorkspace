@@ -1,0 +1,21 @@
+
+S[SEM=(?np + WHERE + ?vp)] -> AD[SEM=?ad] NP[SEM=?np] VP[SEM=?vp]
+VP[SEM=''] -> PP[SEM=?pp] PP[SEM=?ppii]
+PP[SEM=(?p + ?np)] -> P[SEM=?p] NP[SEM=?np]
+NP[SEM=(?det + ?nn] -> DET[SEM=?det] NUM[SEM=?nu] N[SEM=?nn] 
+NP[SEM=''] -> AV[SEM=?av] N[SEM=?n]
+NP[SEM=''] -> DET[SEM=?det] N[SEM=?nn]
+DET[SEM=''] -> 'the'
+N[SEM='hotels FROM hotels_table'] -> 'hotels'
+N[SEM=''] ->  'names'
+AV[SEM=''] -> 'star'
+AD[SEM=(?det + ?iv)] -> DET[SEM=?det] IV[SEM=?iv]
+DET[SEM='SELECT'] -> 'What'
+IV[SEM=''] -> 'are'
+NUM[SEM='5'] -> '5'
+NUM[SEM='4'] -> '4'
+NUM[SEM='3'] -> '3'
+NUM[SEM='2'] -> '2'
+NUM[SEM='1'] -> '1'
+P[SEM=''] -> 'in' | 'of'
+N[SEM='Country="greece"'] -> 'Greece'
